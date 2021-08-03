@@ -4,7 +4,8 @@
   "description": "CLI admin tool for munchkin database",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node index.js welcome"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/munchkin-database/munchkin-cli/issues"
   },
-  "homepage": "https://github.com/munchkin-database/munchkin-cli#readme"
+  "homepage": "https://github.com/munchkin-database/munchkin-cli#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "clear": "^0.1.0",
+    "commander": "^8.1.0",
+    "figlet": "^1.5.0"
+  }
 }
